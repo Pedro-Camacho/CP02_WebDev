@@ -27,8 +27,8 @@ function add_cart(){
 }
 //comentar
 function postar(){
-  var texto=document.getElementById("box-texto").value;
-  var comentarioaadicionar=document.createElement("p");
+  var texto=document.getElementById(".box-texto").value;
+  var comentarioaadicionar=document.createElement("div");
   comentarioaadicionar.classList.add("comentario");
   comentarioaadicionar.appendChild(texto);
   var caixa_comentarios=document.getElementById("caixa-comentarios");
