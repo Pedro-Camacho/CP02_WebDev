@@ -10,7 +10,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
       if (username === '1234' && password === '1234') {
         window.location.href = 'pages/homepage.html';
       } else {
-        document.getElementById('error-message').innerText = 'Invalid username or password.';
+        document.getElementById('error-message').innerText = 'Invalid username or password.';        
       }
     } else {
       document.getElementById('error-message').innerText = 'Você precisa ser maior de 18 anos para acessar esse site.';
@@ -24,4 +24,14 @@ function wine_detail(){
 
 function add_cart(){
     alert("Produto adicionado ao carrinho.")
+}
+//comentar
+function postar(){
+  var texto=document.getElementById("box-texto").value;
+  var comentarioaadicionar=document.createElement("p");
+  comentarioaadicionar.classList.add("comentario");
+  comentarioaadicionar.appendChild(texto);
+  var caixa_comentarios=document.getElementById("caixa-comentarios");
+  caixa_comentarios.appendChild(comentarioaadicionar);
+  document.getElementsByClassName("box-texto").value="";
 }
